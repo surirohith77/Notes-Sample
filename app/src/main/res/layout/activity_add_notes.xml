@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="addNotesViewModelBinding"
+            type="com.rs.notes.addnotes.AddNotesViewModel" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:padding="16dp"
+    android:background="@color/white">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@null"
+            android:id="@+id/etTitle"
+            android:hint="Title"
+            android:textColor="@color/black"
+            android:textColorHint="#989595"
+            android:inputType="textCapWords"
+            />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/etTitle"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:id="@+id/etDesc"
+            android:textColor="@color/black"
+            android:textColorHint="#989595"
+            android:hint="Description"
+            android:gravity="top"
+            android:inputType="textCapWords"
+           />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
